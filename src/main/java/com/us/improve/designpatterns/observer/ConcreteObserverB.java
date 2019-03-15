@@ -7,6 +7,7 @@ package com.us.improve.designpatterns.observer;
  */
 public class ConcreteObserverB implements Observer {
 
+    @Override
     public void update(String message) {
         System.out.println("ConcreteObserverB is notified: " + message);
     }
