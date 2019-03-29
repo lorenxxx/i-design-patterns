@@ -5,6 +5,7 @@ package com.us.improve.designpatterns.strategy;
  */
 public class StrategyB implements IStrategy {
 
+    @Override
     public int calculate(int data) {
         return data * 5;
     }
