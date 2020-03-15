@@ -2,7 +2,7 @@ package com.us.improve.designpatterns.factory.abstractfactory;
 
 /**
  * @ClassName IAbstractFactory
- * @Desciption TODO
+ * @Desciption 抽象工厂
  * @Author loren
  * @Date 2020/3/15 9:49 PM
  * @Version 1.0
