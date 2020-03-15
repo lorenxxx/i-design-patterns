@@ -2,7 +2,7 @@ package com.us.improve.designpatterns.factory.abstractfactory;
 
 /**
  * @ClassName Red
- * @Desciption TODO
+ * @Desciption 具体产品：红色
  * @Author loren
  * @Date 2020/3/15 9:47 PM
  * @Version 1.0
