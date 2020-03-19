@@ -1,18 +1,42 @@
 package com.us.improve.designpatterns.command;
 
 /**
- * Created by Loren on 2018/11/2.
- */
+ * @ClassName MainTest
+ * @Desciption TODO
+ * @Author loren
+ * @Date 2020/3/17 8:55 PM
+ * @Version 1.0
+ **/
 public class MainTest {
 
     public static void main(String[] args) {
-        Invoker invoker = new Invoker();
+        Screen screen = new Screen();
+        screen.display();
 
-        invoker.setButton(1, new ConcreteCommandMachineA());
-        invoker.setButton(2, new ConcreteCommandMachineB());
+        Command command;
 
-        invoker.pressButton(1);
-        invoker.pressButton(2);
+        command = new DrawDogCommand(screen);
+        screen.doCommand(command);
+        screen.display();
+
+        command = new DrawDogCommand(screen);
+        screen.doCommand(command);
+        command = new DrawPigCommand(screen);
+        screen.doCommand(command);
+        command = new DrawFishCommand(screen);
+        screen.doCommand(command);
+        screen.display();
+
+        screen.undoCommand();
+        screen.display();
+
+        screen.undoCommand();
+        screen.undoCommand();
+        screen.undoCommand();
+        screen.display();
+
+        screen.undoCommand();
+        screen.display();
     }
 
 }

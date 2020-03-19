@@ -13,12 +13,14 @@ public abstract class BeverageDecorator extends Beverage {
      * 返回饮料装饰后的描述
      * @return
      */
+    @Override
     public abstract String getDescription();
 
     /**
      * 返回饮料装饰后的价格
      * @return
      */
+    @Override
     public abstract double getCost();
 
 }
