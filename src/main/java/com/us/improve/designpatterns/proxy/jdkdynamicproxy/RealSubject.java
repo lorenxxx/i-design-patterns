@@ -14,9 +14,4 @@ public class RealSubject implements ISubject {
         System.out.println("hello " + name);
     }
 
-    @Override
-    public void sayGoodBye() {
-        System.out.println("Bye");
-    }
-
 }

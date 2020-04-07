@@ -20,11 +20,11 @@ public class LogInvocationHandler implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        System.out.println("Log before...");
+        System.out.println("[]Log before...");
 
         Object returnVal = method.invoke(object, args);
 
-        System.out.println("Log after...");
+        System.out.println("[]Log after...");
 
         return returnVal;
     }

@@ -11,6 +11,4 @@ public interface ISubject {
 
     void sayHello(String name);
 
-    void sayGoodBye();
-
 }

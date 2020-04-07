@@ -14,10 +14,6 @@ public class Client {
 
     public static void main(String[] args) {
         ISubject subject = new RealSubject();
-        System.out.println("调用原始对象: ");
-        subject.sayHello("Loren");
-        subject.sayGoodBye();
-        System.out.println();
 
         ClassLoader classLoader = subject.getClass().getClassLoader();
         Class[] interfaces = subject.getClass().getInterfaces();
@@ -30,7 +26,6 @@ public class Client {
 
         System.out.println("调用代理对象: ");
         subjectProxy2.sayHello("Loren");
-        subjectProxy2.sayGoodBye();
     }
 
 }

@@ -21,7 +21,7 @@ public class PmsCheckInvocationHandler implements InvocationHandler {
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         // 调用前处理
-        System.out.println("执行权限校验。。。");
+        System.out.println("[]Check PMS...");
 
         Object returnValue = method.invoke(object, args);
 
