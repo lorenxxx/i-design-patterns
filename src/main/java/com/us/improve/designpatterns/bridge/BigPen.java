@@ -7,10 +7,12 @@ package com.us.improve.designpatterns.bridge;
  */
 public class BigPen extends AbstractPen {
 
+    @Override
     public void setColor(IColor color) {
         this.color = color;
     }
 
+    @Override
     public void dis() {
         System.out.print("用大号的笔画出");
         color.color();

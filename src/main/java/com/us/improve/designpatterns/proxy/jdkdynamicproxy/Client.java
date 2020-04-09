@@ -21,11 +21,11 @@ public class Client {
         InvocationHandler pmsCheckInvocationHandler = new PmsCheckInvocationHandler(subject);
         ISubject subjectProxy1 = (ISubject) Proxy.newProxyInstance(classLoader, interfaces, pmsCheckInvocationHandler);
 
-        InvocationHandler logInvocationHandler = new LogInvocationHandler(subjectProxy1);
-        ISubject subjectProxy2 = (ISubject) Proxy.newProxyInstance(classLoader, interfaces, logInvocationHandler);
+        //InvocationHandler logInvocationHandler = new LogInvocationHandler(subjectProxy1);
+        //ISubject subjectProxy2 = (ISubject) Proxy.newProxyInstance(classLoader, interfaces, logInvocationHandler);
 
         System.out.println("调用代理对象: ");
-        subjectProxy2.sayHello("Loren");
+        subjectProxy1.sayHello("Loren");
     }
 
 }
