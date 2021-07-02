@@ -9,7 +9,7 @@ package com.us.improve.designpatterns.creation.singleton;
 public class ThreadSafeSingleton
 {
 
-	private static ThreadSafeSingleton instance;
+	private static volatile ThreadSafeSingleton instance;
 
 	private ThreadSafeSingleton()
 	{
