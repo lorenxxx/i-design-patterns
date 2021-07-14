@@ -1,7 +1,7 @@
 package com.us.improve.designpatterns.observer;
 
 /**
- * 抽象主题
+ * 抽象主题（抽象目标）
  *
  * Created by Loren on 2018/10/30.
  */

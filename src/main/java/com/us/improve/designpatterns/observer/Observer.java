@@ -8,7 +8,7 @@ package com.us.improve.designpatterns.observer;
 public interface Observer {
 
     /**
-     * 当主题发送消息时调用
+     * 主题变化时通知观察者调用
      *
      * @param message
      */
