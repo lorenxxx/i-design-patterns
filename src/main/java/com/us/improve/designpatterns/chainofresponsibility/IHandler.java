@@ -1,8 +1,8 @@
 package com.us.improve.designpatterns.chainofresponsibility;
 
 /**
- * @ClassName IHander
- * @Desciption TODO
+ * @ClassName IHandler
+ * @Desciption 责任链中的节点
  * @Author loren
  * @Date 7/14/21 9:18 PM
  * @Version 1.0
